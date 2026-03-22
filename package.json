@@ -1,0 +1,16 @@
+{
+  "name": "styleai",
+  "version": "1.0.0",
+  "description": "AI-powered fashion advisor with skin tone detection",
+  "private": true,
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "dev": "vercel dev",
+    "deploy": "vercel --prod"
+  },
+  "devDependencies": {
+    "vercel": "^34.0.0"
+  }
+}

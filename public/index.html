@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>StyleAI — Personalized Fashion</title>
+  <link rel="stylesheet" href="/css/style.css" />
+</head>
+<body>
+  <div class="app">
+
+    <header class="header">
+      <h1>StyleAI</h1>
+      <p>Upload your photo · Get outfits matched to your skin tone</p>
+    </header>
+
+    <!-- Step 1 -->
+    <div class="card" id="step1">
+      <div class="slabel">STEP 1 — YOUR PHOTO</div>
+      <div class="upload-zone" id="uploadZone">
+        <input type="file" id="fileInput" accept="image/*" />
+        <div class="upload-ph" id="uploadPh">
+          <span class="upload-icon">📷</span>
+          <p>Tap to upload selfie or full-body photo</p>
+          <small>Face visible = better skin tone detection</small>
+        </div>
+        <img id="preview" alt="Preview" />
+      </div>
+      <div id="skinResult"></div>
+    </div>
+
+    <!-- Step 2 -->
+    <div class="card" id="step2">
+      <div class="slabel">STEP 2 — YOUR EVENT</div>
+      <select id="eventSelect">
+        <option value="">Select event type...</option>
+        <option value="Wedding / Reception">Wedding / Reception</option>
+        <option value="Office / Work meeting">Office / Work meeting</option>
+        <option value="Romantic date night">Romantic date night</option>
+        <option value="Beach / Vacation">Beach / Vacation</option>
+        <option value="Birthday party / Club">Birthday party / Club</option>
+        <option value="Casual hangout">Casual hangout</option>
+        <option value="Gym / Sports">Gym / Sports</option>
+        <option value="Formal gala / Awards">Formal gala / Awards</option>
+      </select>
+    </div>
+
+    <button class="go-btn" id="goBtn" disabled>
+      Get Outfit Recommendations →
+    </button>
+
+    <!-- Results -->
+    <div id="results" class="hidden"></div>
+
+  </div>
+
+  <script src="/js/app.js"></script>
+</body>
+</html>
